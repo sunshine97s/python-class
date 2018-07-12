@@ -7,7 +7,6 @@
 from tkinter import *
 import time
 
-
 def leftKeyAction(event):
     print('left key pressed')
 

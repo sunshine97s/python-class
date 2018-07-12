@@ -2,11 +2,11 @@ import time
 from tkinter import *
 
 tk = Tk()
-my_image1 = PhotoImage(file='C:\\Users\drago\Documents\python class\images\\bitcoin1.png')
-my_image2 = PhotoImage(file='C:\\Users\drago\Documents\python class\images\\bitcoin2.png')
-my_image3 = PhotoImage(file='C:\\Users\drago\Documents\python class\images\\bitcoin3.png')
-my_image4 = PhotoImage(file='C:\\Users\drago\Documents\python class\images\\bitcoin4.png')
-my_image5 = PhotoImage(file='C:\\Users\drago\Documents\python class\images\\bitcoin5.png')
+my_image1 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bitcoin1.png')
+my_image2 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bitcoin2.png')
+my_image3 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bitcoin3.png')
+my_image4 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bitcoin4.png')
+my_image5 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bitcoin5.png')
 canvas = Canvas(tk, width=1000, height=1000)
 canvas.pack()
 canvas.create_image(0, 0, anchor="nw", image=my_image1)
