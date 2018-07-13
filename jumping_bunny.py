@@ -2,11 +2,12 @@ from tkinter import *
 
 tk = Tk()
 
+
 canvas = Canvas(tk, width=600, height=600)
-my_image = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bunny1.png')
+my_image1 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bunny1.png')
 my_image2 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bunny2.png')
 my_image3 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bunny3.png')
-canvas.create_image(300, 600, anchor="s", image=my_image)
+canvas.create_image(300, 600, anchor="s", image=my_image1)
 canvas.pack()
 def bunnyjump():
     print('button clicked')
