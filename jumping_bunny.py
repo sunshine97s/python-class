@@ -11,9 +11,11 @@ my_image3 = PhotoImage(file='C:\\Users\drago\Documents\python-class\images\\bunn
 tk.image1_id = canvas.create_image(300, 600, anchor="s", image=my_image1)
 print(tk.image1_id)
 canvas.pack()
+
 def bunnyjump():
-    winsound.PlaySound("C:\\Users\drago\Documents\python-class\sounds\jump_sound.wav", winsound.SND_ASYNC)
     btn['state'] = 'disabled'
+    winsound.PlaySound("C:\\Users\drago\Documents\python-class\sounds\jump_sound.wav",winsound.SND_ASYNC)
+    time.sleep(1.5)
     second = 0.1
     tk.image2_id = canvas.create_image(300, 300, anchor="center", image=my_image2)
     canvas.delete(tk.image1_id)
@@ -34,6 +36,5 @@ def bunnyjump():
 
 btn=Button(tk,text="click to jump", command=bunnyjump)
 btn.pack()
-
 tk.mainloop()
 
