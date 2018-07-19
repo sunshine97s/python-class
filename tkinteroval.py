@@ -1,11 +1,12 @@
 from tkinter import *
 import time
+from tkinter import Canvas
+
 tk = Tk()
-canvas = Canvas (tk, width=500, height=400, bd=0, highlightthickness=0)
+canvas: Canvas = Canvas(tk, width=500, height=400, bd=0, highlightthickness=0)
 canvas.pack()
 
-
-ball_id = canvas.create_oval(10, 10, 25, 25, fill='red', outline='red')
+ball_id = canvas.create_oval(10, 10, 25, 25, fill='white', outline='red')
 bar_id = canvas.create_rectangle(0, 390, 100, 400, fill='green', outline='green')
 
 y_delta_step = 1
@@ -45,7 +46,7 @@ while 1:
     tk.update()
     time.sleep(.02)
        
-
+tk.mainloop()
 
 
 
