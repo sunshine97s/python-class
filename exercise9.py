@@ -8,7 +8,6 @@ print(Level)
 guess = 0
 a = 0
 
-
 if Level == 'E' or 'e':
     a = (randint(1,6))
     print("Choose a number from 1 to 6")
