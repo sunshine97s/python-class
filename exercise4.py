@@ -1,6 +1,6 @@
 number_str = input("Please input a number: ")
 number =int(number_str)
-x = range(2,number-1)
+x = range(2,number)
 divisor = []
 divisor.append(1)
 for element in x:
